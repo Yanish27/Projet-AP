@@ -7,7 +7,6 @@ function getSallesPresentation()
         $ListeSalles = $ReponseBDD->fetchAll();
         foreach ($ListeSalles as $UneSalle)
         {
-            set_include_path("/var/www/html/");
             require 'view/vueSalles.php';
 
         }
