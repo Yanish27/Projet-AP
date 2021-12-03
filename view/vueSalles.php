@@ -3,7 +3,12 @@
         <header class="room__header">
             <div class="room__complexity rating-icons">
                 <div class="rating-icons__placeholder"><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i></div>
-                <div class="rating-icons__active"><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i></div>
+                <div class="rating-icons__active"><?php 
+                    for ($i=0; $i < $UneSalle['difficulte']; $i++) { 
+                      ?><i class="ion-locked"></i><?php
+                    }
+                 ?>
+                </div>
             </div>
             <h2 class="room__title"><a href="#"><?= $UneSalle['NomSalle'] ?></a></h2>
             <div class="room__meta">
