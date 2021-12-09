@@ -3,7 +3,7 @@
 function getAvisTexte()
 {
         $DepuisModele = new modele;
-        $ReponseBDD = $DepuisModele->executerRequete("SELECT * FROM temoignages WHERE type='Texte'");
+        $ReponseBDD = $DepuisModele->executerRequete("SELECT * FROM temoignages WHERE type='Texte' ORDER BY RAND()");
         $ListeDesAvis = $ReponseBDD->fetchAll();
         foreach ($ListeDesAvis as $unAvis)
         {

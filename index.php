@@ -1,56 +1,7 @@
-<?php
-include 'inti.php';
+<?php 
+$page = "index";
+require 'view/header.php'; 
 ?>
-<!DOCTYPE html>
-<html lang="FR">
-<head>
-   <title><?= getValueVariable("nom") ?></title>
-   <meta charset="utf-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="description" content="<?= getValueVariable("description") ?>">
-   <link rel="shortcut icon" href="assets/img/favicons/favicon.ico">
-   <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/favicon-120.png">
-   <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/favicon-152.png">
-   <meta name="viewport" content="width=device-width,initial-scale=1">
-   <link href="https://fonts.googleapis.com/css?family=Anton%7CHind:400,700%7CMontserrat:400,700" rel="stylesheet">
-   <script src="http://maps.google.com/maps/api/js?key=AIzaSyDiZM3GShs8Nswi0zQO1Mz-arV_gwIMZZQ" type="text/javascript"></script>
-   <link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
-   <link href="assets/vendor/animate/animate.css" rel="stylesheet">
-   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-   <link href="assets/font-icon/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-   <link href="assets/font-icon/ionicons/css/ionicons.min.css" rel="stylesheet">
-   <link href="assets/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-   <link href="assets/vendor/slick/slick.css" rel="stylesheet">
-   <style>
-      #googleMap {
-         width: 100%;
-         height: 100%;
-      }
-   </style>
-   <link href="assets/css/style.css" rel="stylesheet">
-   <link href="assets/css/booked.css" rel="stylesheet">
-   <link href="assets/css/custom.css" rel="stylesheet">
-</head>
-<body>
-   <div class="site-wrapper">
-      <div id="js-preloader-overlay" class="preloader-overlay">
-         <div id="js-preloader" class="preloader"></div>
-      </div>
-      <div class="site-overlay"></div>
-      <header id="header" class="header">
-         <div class="header__logo header__logo--img"><a href="index.php"><img src="assets/img/logo.png" srcset="assets/img/logo@2x.png 2x" alt="Logo <?= getValueVariable("acronyme") ?>"></a></div>
-         <nav class="main-nav">
-            <ul class="main-nav__list">
-               <li class="active"><a href="#">Acceuil</a></li>
-               <li><a href="#nossalles">Nos salles</a></li>
-               <li><a href="#principe">Fonctionnement</a></li>
-               <li><a href="#avis">Avis</a></li>
-               <li><a href="#photos">Photos</a></li>
-               <li><a href="#contact">Contact</a></li>
-            </ul>
-         </nav>
-         <a id="header-mobile__toggle" class="burger-menu-icon"><span class="burger-menu-icon__line"></span> <span class="burger-menu-icon__line"></span> <span class="burger-menu-icon__line"></span> </a>
-      </header>
       <div class="main-slider-wrapper">
          <div class="main-slider js-main-slider">
             <div class="main-slider__item main-slider__item--img-1"> <?php // .room-slider__item--img-1  style.css:7407 
@@ -227,22 +178,4 @@ include 'inti.php';
             </div>
          </div>
       </main>
-      <footer id="footer" class="footer">
-         <div class="footer-copyright">
-            <div class="container">
-               <div class="footer__logo footer__logo--img"><a href="#"><img src="http://ap.yanish.fr/assets/img/logo.png" srcset="assets/img/footer-logo@2x.png 2x"></a></div>
-               <div class="footer-copyright__txt">Copyright &copy; 2021<br><?= getValueVariable("nom") ?> &nbsp;</div>
-            </div>
-         </div>
-      </footer>
-   </div>
-   <script src="assets/vendor/jquery/jquery.min.js"></script>
-   <script src="assets/vendor/jquery/jquery-migrate.min.js"></script>
-   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-   <script defer="defer" src="assets/font-icon/font-awesome/js/all.min.js"></script>
-   <script src="assets/vendor/gmap3/dist/gmap3.min.js"></script>
-   <script src="assets/js/core.js"></script>
-   <script src="assets/js/init.js"></script>
-</body>
-
-</html>
+      <?php include('view/footer.php'); ?>
