@@ -5,6 +5,12 @@ function MessageErreur($message)
     return '<div class="alert alert-danger" role="alert">' . $message . '</div>';
 }
 
+
+function returnprisrs(){
+    $var = array(0 => true, 1 => false, 2 => true);
+    return json_encode($var);
+}
+
 function CheckUser($username)
 {
     // On instancie un nouveau modele

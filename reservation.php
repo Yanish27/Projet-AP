@@ -5,7 +5,7 @@ include 'controller/ctReservation.php';
 ?>
 <div class="page-heading jarallax" data-jarallax data-speed="0.2">
     <div class="page-heading__inner">
-        <div class="container">
+        <div class="container"
             <h1 class="page-heading__title">Réservez</h1>
             <ol class="breadcrumb page-heading__breadcrumb">
                 <li class="breadcrumb-item active"><a href="index.php">Acceuil</a></li>
@@ -21,6 +21,8 @@ include 'controller/ctReservation.php';
                 <div class="row">
                     <div class="col-md-8 ml-md-auto mr-md-auto">
                         <?php
+                        
+                        
                         session_start();
                         if (empty($_SESSION['user'])) {
                             if (isset($_POST['inscription_form'])) {
@@ -46,8 +48,10 @@ include 'controller/ctReservation.php';
                             }
                         } else {
                             ?></div><?php
+                            
+                            $unevar = returnprisrs();
                             include 'view/vueReservation.php';
-                        }
+                        }   
                         ?>
                 </div>
             </div>

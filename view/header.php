@@ -20,6 +20,7 @@ if ($page == 'reservation') {
    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/favicon-120.png">
    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/favicon-152.png">
    <meta name="viewport" content="width=device-width,initial-scale=1">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    <link href="https://fonts.googleapis.com/css?family=Anton%7CHind:400,700%7CMontserrat:400,700" rel="stylesheet">
    <script src="http://maps.google.com/maps/api/js?key=AIzaSyDiZM3GShs8Nswi0zQO1Mz-arV_gwIMZZQ" type="text/javascript"></script>
    <link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
